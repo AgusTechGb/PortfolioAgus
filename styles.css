@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+* a{
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 50px ;
+    opacity: 96%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+    
+}
+
+nav p{
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav span{
+    color:rgb(79, 156, 228);
+}
+
+nav a{
+    margin: 0 100px  auto 100px;
+    color: #fff;
+    font-size: 1.4em;
+    opacity: 100%;
+}
+
+nav a:hover{
+    padding: 0 23px;
+    background-color: #211e91;
+    color: rgb(19, 18, 18);
+    border-radius: 10em;
+    transition: ease-in-out .4s;
+}
+
+
+.Home-A{
+    background-image: url(./Img/imgfondo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+
+
+.Home-A h2{
+    font-size: 4em;
+    color: #535C91;
+    text-decoration:dashed;
+    
+}
+
+.Home-A h5{
+    font-size: 2.5em;
+    color: #9290C3;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.contain-home{
+    background-color: rgba(95, 95, 95, 0.404);
+    border-radius: 14px;
+    margin-right: 255px;
+    margin-top: 150px;
+    box-sizing: content-box;
+
+}
+
+.social-contacts a{
+    color: #f2bcf7;
+    z-index: 2;
+    font-size: 2em;
+    justify-content: space-evenly;
+    margin: 25px;
+    
+}
+
+
+.divider{
+    width: 100vw;
+    height: 9px;
+    background-color: rgb(37, 141, 141);
+}
+
+.about-me{
+    background-color: #2c3351; 
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    width: 100vw;
+    align-items: center;
+}
+    
+.img{
+   
+    width: 500px;
+    grid-column: 5/10;
+}
+
+
+
+.where{
+    width: 500px;
+    grid-column: 1/5;
+}
+
+.where a{
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 20px;
+}
+
+.where h3{
+    font-size: 2.8em;
+    font-weight: 800;
+    color: #fff;
+}
+
+.where p{
+    font-size: 2.6em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.where .divider{
+    width: 400px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.img{
+    padding-left: 358px;
+}
+
+.portfolio{
+    width: 100%;
+    background-image: url(./Img/fondoocard.png);
+    background-size: cover;
+    background-color: #2c3351;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    padding: 20px;
+    height: 1000px;
+}
+
+.card img{
+    width: 100%;
+    border: #ccc solid;
+    border-radius: 10px;
+}
+
+.card{
+
+        background-color: #141241c5;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1 1 calc(33.333% - 40px);
+        max-width: 300px;
+        min-width: 200px; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        height: 300px;
+}
+
+.card h4{
+    font-size: 1.9em;
+    color: #ccc;
+}
+
+.card span{
+    font-size: 1.3em;
+    color: #ccc;
+}
+
+.card a{
+    font-size: 2em;
+    color: #ccc;
+}
+
+.card .links-social{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 13px;
+}
+
+.divider{
+    width: 100%;
+    padding-left: -100px;
+}
+
+.contact{
+    width: 100%;
+    height: 21vh;
+    background: #535C91;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .text-contact{
+    padding-right: 500px;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #ccc;
+    
+}
+
+.contact .contact-medias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    color: #ccc;
+    margin-right:200px;
+    padding-left: 200px;
+}
+
+.contact .contact-medias a{
+    color:#ccc;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.692);
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5{
+    font-size: 1em;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+/* Medias Queries */
+@media (max-width: 1024px) {
+    nav a {
+        margin: 0 50px;
+        font-size: 1.2em;
+    }
+
+    .Home-A h2 {
+        font-size: 3em;
+    }
+
+    .Home-A h5 {
+        font-size: 2em;
+    }
+
+    .contain-home {
+        margin-right: 200px;
+    }
+
+    .img {
+        width: 400px;
+        padding-left: 0;
+    }
+
+    .where, .img {
+        grid-column: span 10;
+    }
+
+    .where h3, .where p {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 20px;
+        font-size: 1em;
+    }
+
+    .Home-A h2 {
+        font-size: 2.5em;
+    }
+
+    .Home-A h5 {
+        font-size: 1.5em;
+    }
+
+    .contain-home {
+        margin-right: 100px;
+    }
+
+    .img {
+        width: 300px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .where, .img {
+        width: 100%;
+    }
+
+    .contact-medias {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        margin: 0 10px;
+        font-size: 0.8em;
+    }
+
+    .Home-A h2 {
+        font-size: 2em;
+    }
+
+    .Home-A h5 {
+        font-size: 1.2em;
+    }
+
+    .contain-home {
+        margin-right: 50px;
+    }
+
+    .img {
+        width: 250px;
+    }
+
+    .portfolio {
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .contact-medias {
+        gap: 10px;
+    }
+}
+
+.contact {
+    width: 100%;
+    height: auto; /* Ajuste automático para la altura */
+    background: #535C91;
+    display: flex;
+    flex-direction: column; /* Cambiar la disposición a columnas en pantallas pequeñas */
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Añadir espacio alrededor */
+}
+
+.contact .text-contact {
+    padding-right: 0; /* Eliminar padding para pantallas pequeñas */
+    font-size: 1.4em; /* Ajustar tamaño de fuente para móviles */
+    text-align: center; /* Centrar el texto */
+    font-weight: 700;
+    color: #ccc;
+}
+
+.contact .contact-medias {
+    display: flex;
+    flex-direction: column; /* Cambiar a disposición en columna */
+    align-items: center; /* Alinear los enlaces al centro */
+    gap: 15px; /* Espacio entre los elementos */
+    margin-right: 0; /* Quitar el margin-right */
+    padding-left: 0; /* Quitar el padding-left */
+    margin-top: 10px; /* Añadir margen superior */
+}
+
+.contact .contact-medias a {
+    color: #ccc;
+    font-style: normal;
+    font-size: 1.1em; /* Ajustar tamaño de fuente para móviles */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para pantallas móviles */
+    .contact {
+        flex-direction: column; /* Disposición en columna para móviles */
+        padding: 20px;
+    }
+
+    .contact .text-contact {
+        font-size: 1.2em; /* Reducir un poco el tamaño de la fuente */
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .contact .contact-medias {
+        display: flex;
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: center;
+        gap: 10px; /* Reducir el espacio entre elementos */
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    .contact .contact-medias a {
+        font-size: 1em; /* Ajuste del tamaño de fuente en móviles */
+        text-align: center;
+    }
+}
